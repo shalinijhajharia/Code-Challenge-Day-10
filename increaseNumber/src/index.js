@@ -4,7 +4,18 @@
 
 // Write the function to find the increaseNumber obtained.
 function increaseNumber(initialValue, finalValue) {
-     //your code here
+  //your code here
+  if(isNaN(initialValue)||isNaN(finalValue))
+  {
+    return null;
   }
+  else if(finalValue<initialValue)
+  {
+    return null;
+  }
+  else{
+    return finalValue-initialValue;
+  }
+}
 
 //Use SpecRunner to check the Test Cases.
